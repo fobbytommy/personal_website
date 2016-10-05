@@ -7,7 +7,6 @@ var express 	= require('express'),
 
 // use express method called 'static' to set the location of the static files
 app.use(express.static(path.join(root, 'client')));
-app.use(express.static(path.join(root, "bower_components")));
 
 // set to use body-parser's methods
 app.use(bodyParser.urlencoded({ extended: true }));
